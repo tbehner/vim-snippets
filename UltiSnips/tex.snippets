@@ -8,6 +8,12 @@ snippet "b(egin)?" "begin{} / end{}" br
 \end{$1}
 endsnippet
 
+snippet "mini(page)?" "minipage environment" br
+\begin{minipage}{${1:0.5}\textwidth}
+${2:content}
+\end{minipage}
+endsnippet
+
 snippet abs "abstract environment" b
 \begin{abstract}
 	$0
@@ -145,4 +151,5 @@ endsnippet
 snippet lp "Long parenthesis"
 \left(${1:${VISUAL:contents}}\right)$0
 endsnippet
+
 # vim:ft=snippets:
